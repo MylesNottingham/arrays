@@ -10,11 +10,17 @@ fruits.pop
 primes.shift
 
 # Appends element to the end of array
-floats.push 5.6
+floats.push(5.6)
 
 # Prepends element to the beginning of array
-bools.unshift false
+bools.unshift(false)
 
 # Uses elements at specific indexes from arrays to complete sentences.
 puts "It is #{bools[1]} that the best #{fruits[1]} is bright yellow with light freckles."
 puts "I put at least #{primes[0]} different kinds of fruit in my smoothie and blend for intervals of #{floats[4]} seconds."
+
+# Delete a particular element anywhere in an array
+bools.delete(false)
+
+# Shows that all elements in bool are now "true"
+puts bools
